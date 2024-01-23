@@ -10,15 +10,15 @@ describe("Aspire testcase", () => {
       .should("include", expectedcurrency);
   });
 
-  // it('check the language', () => {
-  //     const attr='lang'
-  //     const expectedlang='en'
+  it('check the language', () => {
+      const attr='lang'
+      const expectedlang='en'
 
-  //     cy.visit('https://global.almosafer.com/en')
-  //     cy.get('.cta__saudi').click()
-  //     cy.get('html').should('have.attr' , attr , expectedlang)
+      cy.visit('https://global.almosafer.com/en')
+      cy.get('.cta__saudi').click()
+      cy.get('html').should('have.attr' , attr , expectedlang)
 
-  // });
+  });
 
   it("check the language", () => {
     let websites = [
